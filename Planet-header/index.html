@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Earth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__top-left">
+          <div class="header__lang">
+            <div class="select__lang">
+              <p class="header__lang-text">Language:</p>
+              <div class="select__header">
+                <span class="select__current">EN</span>
+                <div class="select__arrow"><img src="img/Arrow.png" alt="arrow"></div>
+              </div>
+              <div class="select__body select__body-lang">
+                <div class="select__item">Ru</div>
+                <div class="select__item">En</div>
+                <div class="select__item">KG</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__currency">
+            <div class="select__currency">
+              <p class="header__currency-text">Currency:</p>
+              <div class="select__header">
+                <span class="select__current">EURO</span>
+                <div class="select__arrow"><img src="img/Arrow.png" alt="arrow"></div>
+              </div>
+              <div class="select__body select__body-currency">
+                <div class="select__item">EURO</div>
+                <div class="select__item">USD</div>
+                <div class="select__item">BYN</div>
+                <div class="select__item">RUB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__top-right">
+          <a href="tel:375291111111">Contact us</a>
+          <div class="dropdown">
+            <button class="dropdown__btn">
+              Sing in
+            </button>
+            <div class="dropdown__body">
+              <form class="dropdown__form">
+                <input class="dropdown__input" type="text" name="User-name" placeholder="User name">
+                <input class="dropdown__input" type="text" name="Password" placeholder="Password">
+                <a class="dropdown__link" href="#">Login</a>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="header__center">
+        <div class="header__seach">
+          <img class="header__seach-img" src="img/icon_search.png" alt="icon_seach">
+          <form class="header__seach-form"> 
+            <input class="header__seach-input" type="text" name="seach" class="search" placeholder="Search">
+          </form>
+        </div>
+        <div class="logo">
+          <img class="logo__img" src="img/logo.png" alt="logo">
+        </div>
+        <div class="header__basket">
+          <a class="basket basket--on" href="#">
+            <img src="img/basket.png" alt="basket">
+            <span>0</span>
+          </a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="nav">
+          <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">HOME</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">MEN</a>
+              </li> 
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">WOMEN</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">SELE</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">BLOG</a>
+              </li> 
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">WOMEN</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
