@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "CenturyGothicRegular";
+  font-weight: 400;
+  src: url('../fonts/CenturyGothicRegular.woff2')
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "CenturyGothicRegular";
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.result {
+  margin-bottom: 45px;
+}
+
+.result__title {
+  font-size: 36px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.swiper-wrapper {
+  position: relative;
+  padding-bottom: 55px;
+}
+
+.result__items {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.result__button {
+  position: absolute;
+  cursor: pointer;
+  top: 35%;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.result__button:hover {
+  opacity: 1;
+}
+
+.swiper-button-right {
+  right: 0;
+}
+
+.result__item-img {
+  display: block;
+  max-width: 100%;
+}
+
+.result__item-text {
+  background-color: #ebebeb;
+  text-align: center;
+  max-width: 270px;
+  padding: 16px 0 17px;
+  font-size: 18px;
+}
+
+.swiper-pagination-bullet{
+  background-color: transparent;
+  border: 2px solid #007f3a;
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007f3a;
+}
+
+.main {
+  background-color: #ebebeb;
+  margin-bottom: 55px;
+}
+
+.main__block {
+  padding-top: 42px;
+  background-image: url(../img/bg-eco.webp);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.main__items {
+  display: flex;
+  gap: 15px;
+  padding: 0 0 125px 70px;
+}
+
+.main__list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.main__list-link {
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.fe {
+  color: #007f3a;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.video {
+  margin-bottom: 45px;
+}
+
+.video__title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.video__item {
+  background-image: url('../img/img-video.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 508px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.video__item-img {
+  border: 30px solid #ebebeb;
+  border-radius: 34px;
+  background-color: #ebebeb;
+}
+
+.video__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__btn-text {
+  border: 2px solid #ffcc00;
+  background-color: #ffcc00;
+  box-shadow: 0px 0px 20px rgba(255,204,0, 0.66);
+  padding: 15px 35px;
+  border-radius: 21px;
+  font-size: 18px;
+}
+
+@media (max-width: 1010px) {
+  .swiper-button-right {
+    right: 1%;
+  }  
+}
+
+@media (max-width: 829px) {
+  .result__items {
+    gap: 45px;
+  } 
+}
+
+@media (max-width: 754px) {
+  .result__button {
+    display: none;
+  }
+  .result__title,
+  .main__title,
+  .video__title  {
+    font-size: 30px;
+  }
+  .main__items {
+    gap: 10px;
+    padding: 0 10px 100px 25px;
+  }
+  .video__item {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 619px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 581px) {
+  .result__title,
+  .main__title,
+  .video__title  {
+    font-size: 20px;
+  } 
+  .main__list-link {
+    margin-left: 15px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .video__item {
+    min-height: 300px;
+  }
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+
+  }
+}
+
+@media (max-width: 423px) {
+  .main__items {
+    padding: 0 10px 80px 10px;
+  }
+  .main__list-link {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .main__list-item {
+    margin-bottom: 18px;
+  }
+  
+  .fe {
+    font-size: 25px;
+  }
+  .main__list-img {
+    width: 25px;
+    max-height: 35px;
+  }
+  .video__btn-text {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .video__item {
+    margin-bottom: 34px;
+  }
+}
