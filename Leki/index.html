@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leki</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="top">
+      <div class="container">
+        <div class="top__inner">
+          <div class="top__info-left">
+            <svg style="width:22px; height:22px; fill:#02A676;">
+              <use xlink:href="images/sprite.svg#clock-icon">
+              </use>
+            </svg>
+            <p class="top__info-day">Пн-Вс</p>
+            <p class="top__info-time">8:00-21:00</p>
+            <div class="top__info-items">
+              <p class="top__info-city">Ваш город:</p>
+              <select class="top__info-select">
+                <option value="1">Минск</option>
+                <option value="2">Брест</option>
+                <option value="3">Витебск</option>
+                <option value="4">Гродно</option>
+              </select>
+            </div>
+          </div>
+          <nav class="top__menu">
+            <ul class="top__menu-list">
+              <il class="top__menu-item">
+                <a class="top__menu-link" href="#">
+                  Оплата и доставка
+                </a>
+              </il>
+              <il class="top__menu-item">
+                <a class="top__menu-link" href="#">
+                  Как забронировать
+                </a>
+              </il>
+              <il class="top__menu-item">
+                <a class="top__menu-link" href="#">
+                  Отзывы
+                </a>
+              </il>
+              <il class="top__menu-item">
+                <a class="top__menu-link" href="#">
+                  Об аптеке
+                </a>
+              </il>
+              <il class="top__menu-item">
+                <a class="top__menu-link" href="#">
+                  Новости
+                </a>
+              </il>
+            </ul>
+          </nav>
+          <div class="top__info-right">
+            <div class="top__info-cont">
+              <svg style="width:15px; height:16px; fill:#02A676;">
+                <use xlink:href="images/sprite.svg#phone-icon">
+                </use>
+              </svg>
+              <button class="top__info-cont-btn">
+                Контакты
+              </button>
+              <div class="top__info-cont-list">
+                <ul>
+                  <li class="top__info-cont-link">
+                    <a href="tel:375336258691">
+                      +375 33 625 86 91
+                    </a>
+                  </li>
+                  <li class="top__info-cont-link">
+                    <a href="tel:375298258691">
+                      +375 29 825 86 91
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="top__info-auth">
+              <svg style="width:16px; height:16px; fill:#02A676;">
+                <use xlink:href="images/sprite.svg#person-icon">
+                </use>
+              </svg>
+              <button class="top__info-auth-btn">
+                Войти
+              </button>
+              <form class="top__info-auth-form">
+                <input class="top__info-auth-input" type="text" name="User-name" placeholder="Имя">
+                <input class="top__info-auth-input" type="text" name="Password" placeholder="Пароль">
+                <a class="top__info-auth-link" href="#">Вход</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-main__inner">
+          <a class="header-main__logo-link" href="#">
+            <svg style="width:203px; height:63px;">
+              <use xlink:href="images/sprite.svg#logo">
+              </use>
+            </svg>
+          </a>
+          <form class="header-main__search">
+            <input class="header-main__search-input" type="text" name="seach" class="search"
+              placeholder="Найти лекарство">
+            <button class="header-main__search-btn">
+              <svg style="width:30px; height:30px; fill:white;">
+                <use xlink:href="images/sprite.svg#search-icon">
+                </use>
+              </svg>
+            </button>
+          </form>
+          <div class="header-main__person">
+            <div class="header-main__person-in">
+              <button class="header-main__person-in-btn">
+                <svg style="width:30px; height:30px; fill: #404040;">
+                  <use xlink:href="images/sprite.svg#bi-person">
+                  </use>
+                </svg>
+              </button>
+              <form class="header-main__person-form">
+                <input class="header-main__person-input" type="text" name="User-name" placeholder="Имя">
+                <input class="header-main__person-input" type="text" name="Password" placeholder="Пароль">
+                <a class="header-main__person-link" href="#">Вход</a>
+              </form>
+            </div>
+            <div class="header-main__person-like">
+              <svg style="width:30px; height:30px;">
+                <use xlink:href="images/sprite.svg#like-icon">
+                </use>
+              </svg>
+              <span>0</span>
+            </div>
+            <div class="header-main__person-basket">
+              <svg style="width:31px; height:30px; fill:#404040;">
+                <use xlink:href="images/sprite.svg#basket-icon">
+                </use>
+              </svg>
+              <span>0</span>
+              <p class="header-main__person-basket-price">0.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <div class="menu__inner">
+          <nav class="menu__nav">
+            <button class="menu__nav-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu__nav-list">
+              <li class="menu__nav-item menu__nav-item-drop">
+                <svg style="width:22px; height:22px; fill:#02A676;">
+                  <use xlink:href="images/sprite.svg#clock-icon">
+                  </use>
+                </svg>
+                <p class="menu__nav-item-day">Пн-Вс</p>
+                <p class="menu__nav-item-time">8:00-21:00</p>
+              </li>
+              <li class="menu__nav-item menu__nav-item-drop">
+                <p class="menu__nav-item-city">Ваш город:</p>
+                <select class="menu__nav-item-select">
+                  <option value="1">Минск</option>
+                  <option value="2">Брест</option>
+                  <option value="3">Витебск</option>
+                  <option value="4">Гродно</option>
+                </select>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-item-link" href="#">
+                  <svg style="width:17px; height:15px; fill:#02A676;">
+                    <use xlink:href="images/sprite.svg#menu-icon">
+                    </use>
+                  </svg>
+                  <p class="menu__nav-catalog-link">
+                    Каталог
+                  </p>
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#">
+                  Лекарственные и профилактические средства
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#">
+                  Витамины и Бады
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#">
+                  Медицинские изделия и приборы
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#">
+                  Красота и уход
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <a class="menu__nav-link" href="#">
+                  Оптика
+                </a>
+              </li>
+              <li class="menu__nav-item">
+                <button class="menu__nav-item-btn">
+                  Ещё
+                </button>
+                <ul class="menu__nav-btn-list">
+                  <li class="menu__nav-btn-item">
+                    <a class="menu__nav-btn-link" href="#">
+                      Дермакосметика
+                    </a>
+                  </li>
+                  <li class="menu__nav-btn-item">
+                    <a class="menu__nav-btn-link" href="#">
+                      Медицинские изделия и приборы
+                    </a>
+                  </li>
+                  <li class="menu__nav-btn-item">
+                    <a class="menu__nav-btn-link" href="#">
+                      Декоративная косметика
+                    </a>
+                  </li>
+                  <li class="menu__nav-btn-item">
+                    <a class="menu__nav-btn-link" href="#">
+                      Гигиена
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__nav-item  menu__nav-item-drop">
+                <a class="menu__nav-link" href="#">
+                  Оплата и доставка
+                </a>
+                </il>
+              <li class="menu__nav-item menu__nav-item-drop">
+                <a class="menu__nav-link" href="#">
+                  Как забронировать
+                </a>
+                </il>
+              <li class="menu__nav-item menu__nav-item-drop">
+                <a class="menu__nav-link" href="#">
+                  Отзывы
+                </a>
+                </il>
+              <li class="menu__nav-item menu__nav-item-drop">
+                <a class="menu__nav-link" href="#">
+                  Об аптеке
+                </a>
+                </il>
+              <li class="menu__nav-item menu__nav-item-drop">
+                <a class="menu__nav-link" href="#">
+                  Новости
+                </a>
+                </il>
+              <li class="menu__nav-item menu__nav-item-drop">
+                <svg style="width:15px; height:16px; fill:#02A676;">
+                  <use xlink:href="images/sprite.svg#phone-icon">
+                  </use>
+                </svg>
+                <button class="menu__nav-item-cont-btn">
+                  Контакты
+                </button>
+                <div class="menu__nav-item-cont-list">
+                  <ul>
+                    <li class="menu__nav-item-cont-link">
+                      <a href="tel:375336258691">
+                        +375 33 625 86 91
+                      </a>
+                    </li>
+                    <li class="menu__nav-item-cont-link">
+                      <a href="tel:375298258691">
+                        +375 29 825 86 91
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="main-slider">
+      <div class="container">
+        <div class="main-slider__swiper">
+          <div class="main-slider__items swiper-wrapper">
+            <div class="main-slider__item swiper-slide"
+              style="background-image: url(images/baner-bg-2.webp); background-position: 0 0; background-repeat: no-repeat; background-size:cover; height: 754px;">
+              <div class="main-slider__item-descr">
+                <p class="main-slider__item-title">
+                  Скидка 15% при заказе через мобильное приложение
+                </p>
+                <a class="main-slider__item-link" href="#">
+                  Установить приложение
+                </a>
+              </div>
+              <img class="main-slider__item-img" src="images/baner-img.webp" alt="img">
+            </div>
+            <div class="main-slider__item swiper-slide"
+              style="background-image: url(images/baner-bg-2.webp);background-position: 0 0; background-repeat: no-repeat; background-size:cover; height: 754px;">
+              <div class="main-slider__item-descr">
+                <p class="main-slider__item-title">
+                  Скидка 15% при заказе через мобильное приложение
+                </p>
+                <a class="main-slider__item-link" href="#">
+                  Установить приложение
+                </a>
+              </div>
+              <img class="main-slider__item-img" src="images/baner-img.webp" alt="img">
+            </div>
+            <div class="main-slider__item swiper-slide"
+              style="background-image: url(images/baner-bg-2.webp);background-position: 0 0; background-repeat: no-repeat; background-size:cover; height: 754px;">
+              <div class="main-slider__item-descr">
+                <p class="main-slider__item-title">
+                  Скидка 15% при заказе через мобильное приложение
+                </p>
+                <a class="main-slider__item-link" href="#">
+                  Установить приложение
+                </a>
+              </div>
+              <img class="main-slider__item-img" src="images/baner-img.webp" alt="img">
+            </div>
+            <div class="main-slider__item swiper-slide"
+              style="background-image: url(images/baner-bg-2.webp);background-position: 0 0; background-repeat: no-repeat; background-size:cover; height: 754px;">
+              <div class="main-slider__item-descr">
+                <p class="main-slider__item-title">
+                  Скидка 15% при заказе через мобильное приложение
+                </p>
+                <a class="main-slider__item-link" href="#">
+                  Установить приложение
+                </a>
+              </div>
+              <img class="main-slider__item-img" src="images/baner-img.webp" alt="img">
+            </div>
+          </div>
+          <div class="main-slider__swiper-pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profitable">
+      <div class="container">
+        <div class="profitable__inner">
+          <h2 class="profitable__title title">
+            Выгодное предложение
+          </h2>
+          <div class="profitable__swiper">
+            <div class="profitable__swiper-items swiper-wrapper">
+              <div class="profitable__swiper-item swiper-slide">
+                <div class="profitable__swiper-item-info">
+                  <p class="profitable__swiper-item-sale">
+                    -20%
+                  </p>
+                  <svg style="width:40px; height:40px;">
+                    <use xlink:href="images/sprite.svg#like-prof-icon">
+                    </use>
+                  </svg>
+                </div>
+                <div class="profitable__swiper-img">
+                  <img src="images/profitable-1.webp" alt="product">
+                </div>
+                <div class="profitable__swiper-descr">
+                  <h3 class="profitable__swiper-title">
+                    Лекарства, Лекарства от кашля
+                  </h3>
+                  <p class="profitable__swiper-item-subtitle">
+                    Пектолвал, 50 мл.
+                  </p>
+                  <img src="images/profitable-stars.webp" style="width: 75px;" alt="stars">
+                  <div class="profitable__swiper-price">
+                    <span class="profitable__swiper-price-currency">
+                      32.00 руб.
+                    </span>
+                    <span class="profitable__swiper-price-old">
+                      40.00 руб
+                    </span>
+                  </div>
+                  <div class="profitable__swiper-order">
+                    <div class="profitable__swiper-order-buttons">
+                      <button class="profitable__swiper-order-minus">-</button>
+                      <button class="profitable__swiper-order-plus">+</button>
+                    </div>
+                    <span class="profitable__swiper-order-quantity">
+                      1
+                    </span>
+                    <a class="profitable__swiper-order-link" href="#">
+                      <svg style="width:31px; height:30px;">
+                        <use xlink:href="images/sprite.svg#basket-icon">
+                        </use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__swiper-item swiper-slide">
+                <div class="profitable__swiper-item-info">
+                  <p class="profitable__swiper-item-sale">
+                    -25%
+                  </p>
+                  <svg style="width:40px; height:40px;">
+                    <use xlink:href="images/sprite.svg#like-prof-icon">
+                    </use>
+                  </svg>
+                </div>
+                <div class="profitable__swiper-img">
+                  <img src="images/profitable-2.webp" alt="product">
+                </div>
+                <div class="profitable__swiper-descr">
+                  <h3 class="profitable__swiper-title">
+                    Лекарства, Лекарства от кашля
+                  </h3>
+                  <p class="profitable__swiper-item-subtitle">
+                    Бронхалик, 20 таб.
+                  </p>
+                  <img src="images/profitable-stars.webp" style="width: 75px;" alt="stars">
+                  <div class="profitable__swiper-price">
+                    <span class="profitable__swiper-price-currency">
+                      30.00 руб.
+                    </span>
+                    <span class="profitable__swiper-price-old">
+                      40.00 руб
+                    </span>
+                  </div>
+                  <div class="profitable__swiper-order">
+                    <div class="profitable__swiper-order-buttons">
+                      <button class="profitable__swiper-order-minus">-</button>
+                      <button class="profitable__swiper-order-plus">+</button>
+                    </div>
+                    <span class="profitable__swiper-order-quantity">
+                      1
+                    </span>
+                    <a class="profitable__swiper-order-link" href="#">
+                      <svg style="width:31px; height:30px; fill: #999;">
+                        <use xlink:href="images/sprite.svg#basket-icon">
+                        </use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__swiper-item swiper-slide">
+                <div class="profitable__swiper-item-info">
+                  <p class="profitable__swiper-item-sale">
+                    -15%
+                  </p>
+                  <svg style="width:40px; height:40px;">
+                    <use xlink:href="images/sprite.svg#like-prof-icon">
+                    </use>
+                  </svg>
+                </div>
+                <div class="profitable__swiper-img">
+                  <img src="images/profitable-3.webp" alt="product">
+                </div>
+                <div class="profitable__swiper-descr">
+                  <h3 class="profitable__swiper-title">
+                    Лекарства, Лекарства от кашля
+                  </h3>
+                  <p class="profitable__swiper-item-subtitle">
+                    Пектолвал, 50 мл.
+                  </p>
+                  <img src="images/profitable-stars.webp" style="width: 75px;" alt="stars">
+                  <div class="profitable__swiper-price">
+                    <span class="profitable__swiper-price-currency">
+                      34.00 руб.
+                    </span>
+                    <span class="profitable__swiper-price-old">
+                      40.00 руб
+                    </span>
+                  </div>
+                  <div class="profitable__swiper-order">
+                    <div class="profitable__swiper-order-buttons">
+                      <button class="profitable__swiper-order-minus">-</button>
+                      <button class="profitable__swiper-order-plus">+</button>
+                    </div>
+                    <span class="profitable__swiper-order-quantity">
+                      1
+                    </span>
+                    <a class="profitable__swiper-order-link" href="#">
+                      <svg style="width:31px; height:30px; fill: #999;">
+                        <use xlink:href="images/sprite.svg#basket-icon">
+                        </use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__swiper-item swiper-slide">
+                <div class="profitable__swiper-item-info">
+                  <p class="profitable__swiper-item-sale">
+                    -10%
+                  </p>
+                  <svg style="width:40px; height:40px;">
+                    <use xlink:href="images/sprite.svg#like-prof-icon">
+                    </use>
+                  </svg>
+                </div>
+                <div class="profitable__swiper-img">
+                  <img src="images/profitable-4.webp" alt="product">
+                </div>
+                <div class="profitable__swiper-descr">
+                  <h3 class="profitable__swiper-title">
+                    Лекарства, Лекарства от кашля
+                  </h3>
+                  <p class="profitable__swiper-item-subtitle">
+                    Пектолван, 100 мл.
+                  </p>
+                  <img src="images/profitable-stars.webp" style="width: 75px;" alt="stars">
+                  <div class="profitable__swiper-price">
+                    <span class="profitable__swiper-price-currency">
+                      36.00 руб.
+                    </span>
+                    <span class="profitable__swiper-price-old">
+                      40.00 руб
+                    </span>
+                  </div>
+                  <div class="profitable__swiper-order">
+                    <div class="profitable__swiper-order-buttons">
+                      <button class="profitable__swiper-order-minus">-</button>
+                      <button class="profitable__swiper-order-plus">+</button>
+                    </div>
+                    <span class="profitable__swiper-order-quantity">
+                      1
+                    </span>
+                    <a class="profitable__swiper-order-link" href="#">
+                      <svg style="width:31px; height:30px; fill: #999;">
+                        <use xlink:href="images/sprite.svg#basket-icon">
+                        </use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__swiper-item swiper-slide">
+                <div class="profitable__swiper-item-info">
+                  <p class="profitable__swiper-item-sale">
+                    -20%
+                  </p>
+                  <svg style="width:40px; height:40px;">
+                    <use xlink:href="images/sprite.svg#like-prof-icon">
+                    </use>
+                  </svg>
+                </div>
+                <div class="profitable__swiper-img">
+                  <img src="images/profitable-1.webp" alt="product">
+                </div>
+                <div class="profitable__swiper-descr">
+                  <h3 class="profitable__swiper-title">
+                    Лекарства, Лекарства от кашля
+                  </h3>
+                  <p class="profitable__swiper-item-subtitle">
+                    Пектолвал, 50 мл.
+                  </p>
+                  <img src="images/profitable-stars.webp" style="width: 75px;" alt="stars">
+                  <div class="profitable__swiper-price">
+                    <span class="profitable__swiper-price-currency">
+                      32.00 руб.
+                    </span>
+                    <span class="profitable__swiper-price-old">
+                      40.00 руб
+                    </span>
+                  </div>
+                  <div class="profitable__swiper-order">
+                    <div class="profitable__swiper-order-buttons">
+                      <button class="profitable__swiper-order-minus">-</button>
+                      <button class="profitable__swiper-order-plus">+</button>
+                    </div>
+                    <span class="profitable__swiper-order-quantity">
+                      1
+                    </span>
+                    <a class="profitable__swiper-order-link" href="#">
+                      <svg style="width:31px; height:30px; fill: #999;">
+                        <use xlink:href="images/sprite.svg#basket-icon">
+                        </use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="profitable__swiper-item swiper-slide">
+                <div class="profitable__swiper-item-info">
+                  <p class="profitable__swiper-item-sale">
+                    -20%
+                  </p>
+                  <svg style="width:40px; height:40px;">
+                    <use xlink:href="images/sprite.svg#like-prof-icon">
+                    </use>
+                  </svg>
+                </div>
+                <div class="profitable__swiper-img">
+                  <img src="images/profitable-1.webp" alt="product">
+                </div>
+                <div class="profitable__swiper-descr">
+                  <h3 class="profitable__swiper-title">
+                    Лекарства, Лекарства от кашля
+                  </h3>
+                  <p class="profitable__swiper-item-subtitle">
+                    Пектолвал, 50 мл.
+                  </p>
+                  <img src="images/profitable-stars.webp" style="width: 75px;" alt="stars">
+                  <div class="profitable__swiper-price">
+                    <span class="profitable__swiper-price-currency">
+                      32.00 руб.
+                    </span>
+                    <span class="profitable__swiper-price-old">
+                      40.00 руб
+                    </span>
+                  </div>
+                  <div class="profitable__swiper-order">
+                    <div class="profitable__swiper-order-buttons">
+                      <button class="profitable__swiper-order-minus">-</button>
+                      <button class="profitable__swiper-order-plus">+</button>
+                    </div>
+                    <span class="profitable__swiper-order-quantity">
+                      1
+                    </span>
+                    <a class="profitable__swiper-order-link" href="#">
+                      <svg style="width:31px; height:30px; fill: #999;">
+                        <use xlink:href="images/sprite.svg#basket-icon">
+                        </use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profitable__swiper-btn swiper-button-left">
+              <svg style="width:31px; height:31px;">
+                <use xlink:href="images/sprite.svg#arrow-left">
+                </use>
+              </svg>
+            </div>
+            <div class="profitable__swiper-btn swiper-button-right">
+              <svg style="width:31px; height:31px;">
+                <use xlink:href="images/sprite.svg#arrow-right">
+                </use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quality">
+      <div class="container">
+        <div class="quality__inner">
+          <div class="quality__descr">
+            <h2 class="quality__title title">
+              Самая высокая система качества
+            </h2>
+            <p class="quality__text">
+              Покупая лекарственные средства у нас, вы можете быть уверены в их качестве, безопасности и эффективности.
+              Для этого в компании создана, внедрена и постоянно совершенствуется фармацевтическая система качества в
+              соответствии с действующими нормативами и в соответствии с мировыми стандартами.<br>
+              Квалифицированный персонал нашей сети аптек обеспечит строгое соблюдение фармацевтического режима,
+              организацию бесперебойного снабжения медицинскими товарами, обеспечивает высококачественное и
+              своевременное обслуживание клиентов.<br>
+              У наших сотрудников аптеки вы получите консультации по вопросам, касающихся отпуска, приема, хранения
+              лекарственных средств.
+            </p>
+          </div>
+          <div class="quality__items">
+            <div class="quality__item">
+              <img class="quality__item-img" src="images/quality-1.webp" alt="quality">
+            </div>
+            <div class="quality__item">
+              <img class="quality__item-img" src="images/quality-2.webp" alt="quality">
+              <img class="quality__item-img" src="images/quality-3.webp" alt="quality">
+              <img class="quality__item-img" src="images/quality-4.webp" alt="quality">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular">
+      <div class="container">
+        <div class="popular__inner">
+          <h2 class="popular__title title">
+            Популярные категории
+          </h2>
+          <div class="popular__swiper">
+            <div class="popular__swiper-wrapper swiper-wrapper">
+              <div class="popular__item swiper-slide">
+                <a href="#">
+                  <img class="popular__item-img" src="images/popular-1.webp" alt="popular">
+                  <div class="popular__descr">
+                    <h3 class="popular__descr-title">
+                      Лекарственные и профилактические средства
+                    </h3>
+                    <p class="popular__descr-text">
+                      Всего: 3600 товаров
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="popular__item swiper-slide">
+                <a href="#">
+                  <img class="popular__item-img" src="images/popular-2.webp" alt="popular">
+                  <div class="popular__descr">
+                    <h3 class="popular__descr-title">
+                      Лекарственные средства для улучшения пищеворения
+                    </h3>
+                    <p class="popular__descr-text">
+                      Всего: 3600 товаров
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="popular__item swiper-slide">
+                <a href="#">
+                  <img class="popular__item-img" src="images/popular-3.webp" alt="popular">
+                  <div class="popular__descr">
+                    <h3 class="popular__descr-title">
+                      Лекарственные средства для беременных
+                    </h3>
+                    <p class="popular__descr-text">
+                      Всего: 2400 товаров
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="popular__item swiper-slide">
+                <a href="#">
+                  <img class="popular__item-img" src="images/popular-4.webp" alt="popular">
+                  <div class="popular__descr">
+                    <h3 class="popular__descr-title">
+                      Витамины и Бады для взрослых и детей
+                    </h3>
+                    <p class="popular__descr-text">
+                      Всего: 1200 товаров
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="popular__item swiper-slide">
+                <a href="#">
+                  <img class="popular__item-img" src="images/popular-1.webp" alt="popular">
+                  <div class="popular__descr">
+                    <h3 class="popular__descr-title">
+                      Витамины и Бады для взрослых и детей
+                    </h3>
+                    <p class="popular__descr-text">
+                      Всего: 1200 товаров
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="popular__item swiper-slide">
+                <a href="#">
+                  <img class="popular__item-img" src="images/popular-1.webp" alt="popular">
+                  <div class="popular__descr">
+                    <h3 class="popular__descr-title">
+                      Витамины и Бады для взрослых и детей
+                    </h3>
+                    <p class="popular__descr-text">
+                      Всего: 1200 товаров
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="popular__swiper-pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog">
+      <div class="container">
+        <div class="blog__inner">
+          <div class="blog__news">
+            <h3 class="blog__news-title">
+              Новости
+            </h3>
+            <div class="blog__news-items">
+              <div class="blog__news-item">
+                <a class="blog__news-item-link" href="#">
+                  <img class="blog__news-img" src="images/news-1.webp" alt="news">
+                  <div class="blog__news-descr">
+                    <h3 class="blog__news-descr-title">
+                      14 мая 2021
+                    </h3>
+                    <p class="blog__news-descr-subtitle">
+                      Позиция наф по вопросу продажи лекарств в аптеках
+                    </p>
+                    <p class="blog__news-descr-text">
+                      На официальном сайте для размещения информации о подготовке федеральными органами исполнительной
+                      власти проектов нормативных правовых актов.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="blog__news-item">
+                <a class="blog__news-item-link" href="#">
+                  <img class="blog__news-img" src="images/news-2.webp" alt="news">
+                  <div class="blog__news-descr">
+                    <h3 class="blog__news-descr-title">
+                      05 мая 2021
+                    </h3>
+                    <p class="blog__news-descr-subtitle">
+                      Международный день акушерки
+                    </p>
+                    <p class="blog__news-descr-text">
+                      5 мая свой профессиональный праздник отмечают акушеры – люди, от мастерства которых зависит
+                      будущее поколение. Идею праздника предложила.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="blog__news-item">
+                <a class="blog__news-item-link" href="#">
+                  <img class="blog__news-img" src="images/news-3.webp" alt="news">
+                  <div class="blog__news-descr">
+                    <h3 class="blog__news-descr-title">
+                      28 апреля 2021
+                    </h3>
+                    <p class="blog__news-descr-subtitle">
+                      Береги суставы: обзор препаратов
+                    </p>
+                    <p class="blog__news-descr-text">
+                      Данное средство, прежде всего, полезно пожилым людям, ведь чем выше возраст, тем более хрупкие
+                      суставы у человека. Также препарат заинтересует тех, кто занимается.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="blog__articles">
+            <h3 class="blog__articles-title">
+              Статьи
+            </h3>
+            <div class="blog__articles-items">
+              <div class="blog__articles-item">
+                <a class="blog__articles-item-link" href="#">
+                  <img class="blog__articles-img" src="images/articles-1.webp" alt="articles">
+                  <div class="blog__articles-descr">
+                    <h3 class="blog__articles-descr-title">
+                      1 июня 2021
+                    </h3>
+                    <p class="blog__articles-descr-subtitle">
+                      Как легко и безопасно лечить аллергию?
+                    </p>
+                    <p class="blog__articles-descr-text">
+                      Каждый четвертый житель планеты сегодня страдает той или иной формой аллергии. Аллергия – это
+                      патологическая реакция организма.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="blog__articles-item">
+                <a class="blog__articles-item-link" href="#">
+                  <img class="blog__articles-img" src="images/articles-2.webp" alt="articles">
+                  <div class="blog__articles-descr">
+                    <h3 class="blog__articles-descr-title">
+                      23 мая 2021
+                    </h3>
+                    <p class="blog__articles-descr-subtitle">
+                      Ушибы и их лечение
+                    </p>
+                    <p class="blog__articles-descr-text">
+                      Никто не застрахован от падений. Чаще всего падают дети и получают незначительные ушибы, от
+                      которых можно спастись своими силами.....
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="blog__articles-item">
+                <a class="blog__articles-item-link" href="#">
+                  <img class="blog__articles-img" src="images/articles-3.webp" alt="articles">
+                  <div class="blog__articles-descr">
+                    <h3 class="blog__articles-descr-title">
+                      15 апреля 2021
+                    </h3>
+                    <p class="blog__articles-descr-subtitle">
+                      Нужны ли вам успокоительные?
+                    </p>
+                    <p class="blog__articles-descr-text">
+                      Строго говоря, снизить уровень стресса можно, употребляя обычные продукты, насыщенные жирной
+                      кислотой Омега-3. Существуют совершенно отдельные симптомы....
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__top-info">
+            <div class="footer__top-time">
+              <h3 class="footer__top-time-title">
+                Время работы:
+              </h3>
+              <p class="footer__top-time-text">
+                Пн-Вс 8:00-21:00
+              </p>
+            </div>
+            <div class="footer__top-address">
+              <h3 class="footer__top-address-title">
+                Адрес офиса:
+              </h3>
+              <p class="footer__top-address-text">
+                222823 Минская р-н, п. Дрозды, ул. Тихая 21
+              </p>
+            </div>
+          </div>
+          <div class="footer__top-contacts">
+            <h3 class="footer__top-contacts-title">
+              Телефоны:
+            </h3>
+            <a class="footer__top-contacts-phone" href="tel:375336258691">+375 33 625 86 91</a>
+            <a class="footer__top-contacts-phone" href="tel:375298258691">+375 29 825 86 91</a>
+          </div>
+          <nav class="footer__top-menu">
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Оплата и доставка
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Как забронировать
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Об аптеке
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Новости
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer__top-menu">
+            <ul class="footer__top-menu-list">
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-title" href="#">
+                  Каталог
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Акции
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Лекарственные и профилактические средства
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Витамины и Бады
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Медициские издения и приборы
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Красота и уход
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Оптика
+                </a>
+              </li>
+              <li class="footer__top-menu-item">
+                <a class="footer__top-menu-item-link" href="#">
+                  Ещё
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__top-custom">
+            <h3 class="footer__top-custom-title">
+              ИOOO «Леки»
+            </h3>
+            <p class="footer__top-custom-text">
+              222823, Минская обл, Минский р-н, п. Дрозды, ул. Тихая 21
+            </p>
+            <p class="footer__top-custom-text">
+              УНП 800001520 Дата регистрации сайта в Торговом реестре РБ от 21.10.2015г
+            </p>
+            <a class="footer__top-custom-link" href="#">
+              Публичный договор оферты
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-copy" href="#">
+            2021
+            <svg style="width:62px; height:12px; fill:white;">
+              <use xlink:href="images/sprite.svg#logo-footer">
+              </use>
+            </svg>
+          </a>
+          <div class="footer__bottom-social">
+            <a href="#">
+              <svg style="width:18px; height:18px; fill:white;">
+                <use xlink:href="images/sprite.svg#instagram-icon">
+                </use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg style="width:19px; height:18px; fill:white;">
+                <use xlink:href="images/sprite.svg#facebook-icon">
+                </use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg style="width:27px; height:27px; fill:white;">
+                <use xlink:href="images/sprite.svg#vkontakte-icon">
+                </use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg style="width:21px; height:21px; fill:white;">
+                <use xlink:href="images/sprite.svg#twitter-icon">
+                </use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__bottom-pay">
+            <a href="#">
+              <img src="images/webpay.webp" alt="webpay">
+            </a>
+            <a href="#">
+              <img src="images/visa.webp" alt="visa">
+            </a>
+            <a href="#">
+              <img src="images/verified-by-visa.webp" alt="verified-by-visa">
+            </a>
+            <a href="#">
+              <img src="images/mastercard.webp" alt="mastercard">
+            </a>
+            <a href="#">
+              <img src="images/securecode.webp" alt="mastercard-secure-code">
+            </a>
+            <a href="#">
+              <img src="images/raschet.webp" alt="расчет">
+            </a>
+            <a href="#">
+              <img src="images/belcard.webp" alt="белкарт">
+            </a>
+            <a href="#">
+              <img src="images/belcard-web-password.webp" alt="белкарт-интернет-пароль">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
