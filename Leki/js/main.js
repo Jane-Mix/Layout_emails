@@ -96,8 +96,18 @@ const popularSwiper = new Swiper(".popular__swiper", {
   },  
 });
 
+const catalogFilterDrop = document.querySelector('.catalog__filter-btn');
 
+catalogFilterDrop.addEventListener('click', ()=> {
+  catalogFilterDrop.classList.toggle('catalog__filter-btn--active')
+});
 
+const catalogBtn = document.querySelector('.catalog__btn');
+const catalogList = document.querySelector('.catalog__menu');
+
+catalogBtn.addEventListener('click', () => {
+  catalogList.classList.toggle('catalog__menu--active')
+});
 
 
 
