@@ -35,6 +35,32 @@ navBtn.addEventListener('click', () => {
   navList.classList.toggle('menu__nav-list--active')
 });
 
+const tabItem = document.querySelectorAll('.card__info-btn-item');
+const tabContent = document.querySelectorAll('.card__info-content');
+
+tabItem.forEach(function(element) {
+  element.addEventListener('click', open);
+});
+
+function open(evt) {
+  const tabTarget = evt.currentTarget;
+  const button = tabTarget.dataset.button;
+
+
+  tabItem.forEach(function(item) {
+    item.classList.remove('card__info-btn-item--active');
+  });
+
+  tabTarget.classList.add('card__info-btn-item--active');
+
+  tabContent.forEach(function(item) {
+    item.classList.remove('card__info-content--active');
+  });
+
+  document.querySelector(`#${button}`).classList.add('card__info-content--active');
+};
+
+
 const mainSwiper = new Swiper(".main-slider__swiper", {
   loop: true,
   spaceBetween: 5,
@@ -46,6 +72,30 @@ const mainSwiper = new Swiper(".main-slider__swiper", {
 });
 
 const profSwiper = new Swiper(".profitable__swiper", {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 4,
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+  breakpoints: {
+    315: {
+      slidesPerView: 1,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 4,
+    },
+  },  
+});
+
+const cardSwiper = new Swiper(".analogues__swiper", {
   loop: true,
   spaceBetween: 30,
   slidesPerView: 4,
@@ -109,6 +159,29 @@ catalogBtn.addEventListener('click', () => {
   catalogList.classList.toggle('catalog__menu--active')
 });
 
+const analogSwiper = new Swiper(".analogues__swiper", {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 4,
+  navigation: {
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
+  },
+  breakpoints: {
+    315: {
+      slidesPerView: 1,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 4,
+    },
+  },  
+});
 
 
 
