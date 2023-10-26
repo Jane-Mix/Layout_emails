@@ -1,3 +1,30 @@
+const rangeInput = document.querySelectorAll(".catalog__filter-btn-range input");
+priceInput = document.querySelectorAll(".catalog__filter-btn-slider-interval-field input");
+progress = document.querySelector(".catalog__filter-btn-slider .catalog__filter-btn-slider-progress");
+
+let priceGap = 1;
+
+rangeInput.forEach(input =>{
+  input.addEventListener("input", e =>{
+    let minVal = parseInt(rangeInput[0].value),
+    maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if(e.target.className === "catalog__filter-btn-range-min"){
+      rangeInput[0].value = maxVal - priceGap;
+      } else {
+        rangeInput[1].value = minVal + priceGap;
+       }
+    }else{
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      progress.style.right = 100 -(maxVal / rangeInput[0].max) * 100 + "%";
+    }
+  });
+});
+
+
 const contBtn = document.querySelector('.top__info-cont-btn');
 
 contBtn.addEventListener('click', ()=> {
@@ -182,6 +209,4 @@ const analogSwiper = new Swiper(".analogues__swiper", {
     },
   },  
 });
-
-
 
